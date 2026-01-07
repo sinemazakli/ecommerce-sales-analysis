@@ -1,36 +1,37 @@
 # 📊 E-Ticaret Satış Analizi
 
-Bu proje, bir e-ticaret firmasının satış verilerinin Python, SQL ve Power BI kullanılarak analiz edilmesini kapsamaktadır.
+Bu proje, bir e-ticaret firmasına ait satış verilerinin Python, SQL Server ve Power BI kullanılarak analiz edilmesini kapsamaktadır.  
+Amaç, satış performansını farklı boyutlardan inceleyerek iş kararlarını destekleyebilecek anlamlı içgörüler elde etmektir.
+
+---
 
 ## 🔍 Proje Amaçları
-- Satış performansını analiz etmek
-- Ülkelere göre satış dağılımını incelemek
-- En çok ciro ve satış adedi oluşturan ürünleri belirlemek
-- Müşteri tiplerine (Registered / Guest) göre gelir katkısını karşılaştırmak
-- Power BI ile etkileşimli bir dashboard oluşturmak
+
+- Genel satış performansını analiz etmek  
+- Ülkelere göre satış ve ciro dağılımını incelemek  
+- En yüksek ciro ve satış adedine sahip ürünleri belirlemek  
+- Müşteri tiplerine (Registered / Guest) göre gelir katkısını karşılaştırmak  
+- Power BI ile etkileşimli ve yeniden kullanılabilir bir dashboard oluşturmak  
+
+---
 
 ## 🧰 Kullanılan Teknolojiler
-- **Python** (Pandas, NumPy)
-- **SQL Server**
-- **Power BI**
-- **Jupyter Notebook**
+
+- **Python** (Pandas, NumPy) – Veri yükleme ve ön işleme  
+- **SQL Server** – Veri depolama ve analitik sorgular  
+- **Power BI** – Veri görselleştirme ve dashboard tasarımı  
+- **VS Code** – Geliştirme ortamı  
+
+---
 
 ## 📁 Proje Yapısı
-- `data/` : Temizlenmiş veri seti
-- `notebook/` : Veri temizleme ve feature engineering
-- `sql/` : Analiz sorguları
-- `powerbi/` : Dashboard şablonu ve görsel önizleme
 
-## 📈 Power BI Dashboard
-Dashboard aşağıdaki metrikleri içermektedir:
-- Toplam ciro (Total Price)
-- Toplam satış adedi (Quantity)
-- Ürün bazlı Top 10 analizleri
-- Ülkelere göre satış dağılımı
-- Müşteri tiplerine göre gelir oranları
-- Zaman bazlı (Yıl / Ay) analizler
+```text
+├── data_loading_and_cleaning.py   # CSV verisinin yüklenmesi ve temizlenmesi
+├── queries.sql                    # Analiz için kullanılan SQL sorguları
+├── powerbi/
+│   ├── ecommerce_dashboard.pbit   # Power BI şablon dosyası
+│   └── dashboard_preview.png      # Dashboard ekran görüntüsü
+└── README.md
 
-![Dashboard Preview](powerbi/dashboard_preview.png)
 
-## 📌 Notlar
-Bu projede kullanılan Power BI dosyası şablon formatındadır (.pbit) ve veri içermemektedir. Dashboard, SQL Server bağlantısı üzerinden yeniden kullanılabilir yapıdadır.
